@@ -1,0 +1,38 @@
+//
+// Colors
+//
+
+// Override Bootstrap color variables
+
+$hyper: #03a9f4;
+
+$hyper-back: #03a9f4;
+
+// Override Bootstrap state colors variables
+
+$primary: $hyper;
+
+// Override Bootstrap contrast ratio
+
+$min-contrast-ratio: 1.5;
+
+.shootshot {
+  --front: #f9e428;
+  --back: #000;
+}
+.resque {
+  --front: #4839e7;
+  --back: #9d97f3;
+}
+.inify {
+  --front: #0478a1;
+  --back: #b9dbea;
+}
+.chatify {
+  --front: #035000;
+  --back: #8db08c;
+}
+.mysterybox {
+  --front: #ff9aca;
+  --back: #ffc4f9;
+}

@@ -1,0 +1,24 @@
+#chatifyModal.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-dialog
+        .modal-content
+            .close-modal(data-bs-dismiss='modal')
+                img(src='assets/img/close-icon.svg', alt='Close modal')
+            .container
+                .row.justify-content-center
+                    .col-lg-8
+                        .modal-body
+                            // Project details
+                            h2.text-uppercase Chatify
+                            p.item-intro.text-muted Social E-commerce
+                            img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/chatify.png', alt='chatify portfolio')
+                            p Chatify is a marketplace for local Japanese products. You can find authentic products selling by local family-run businesses, and negotiate with them directly.
+                            ul.list-inline
+                                li
+                                    strong Link:
+                                    a(href='https://chatify.hypermyper.com', target='blank') site
+                                li
+                                    strong Category:
+                                    | E-Commerce
+                            button.btn.btn-primary.btn-xl.text-uppercase(data-bs-dismiss='modal', type='button')
+                                i.fas.fa-xmark.me-1
+                                | Close Project
