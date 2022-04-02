@@ -12,6 +12,9 @@ html(lang='en')
         meta(name="apple-mobile-web-app-capable", content="yes")
         meta(name="apple-mobile-web-app-status-bar-style", content="black-translucent")
 
+        meta(property="og:image", href="assets/img/logo.png")
+        meta(property="twitter:image", href="assets/img/logo.png")
+
         title Sakura Holding - marketplace expert
 
         // Favicon
@@ -43,7 +46,7 @@ html(lang='en')
                         li.nav-item
                             a.nav-link(href='#services') Services
                         li.nav-item
-                            a.nav-link(href='#portfolio') Portfolio
+                            a.nav-link(href='#chatify') Chatify
                         li.nav-item
                             a.nav-link(href='#about') About
                         li.nav-item
@@ -112,67 +115,16 @@ html(lang='en')
                             | Securing ownerships by writing patents.
 
         // Portfolio Grid
-        section#portfolio.page-section.bg-light
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Portfolio
-                    h3.section-subheading.text-muted Successfully published projects
-                .row
-                    .col-lg-4.col-sm-6.mb-4
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#chatifyModal')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                div.shinig-img.chatify
-                                    img.img-fluid(src='assets/img/logos/chatify.png', alt='chatify logo')
-                            .portfolio-caption
-                                .portfolio-caption-heading Chatify
-                                .portfolio-caption-subheading.text-muted Social E-commerce
-                    .col-lg-4.col-sm-6.mb-4
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#mysteryboxModal')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                div.shinig-img.mysterybox
-                                    img.img-fluid(src='assets/img/logos/mysterybox.png', alt='mysterybox logo')
-                            .portfolio-caption
-                                .portfolio-caption-heading Mystery Box
-                                .portfolio-caption-subheading.text-muted Lucky Japanese Products
-                    .col-lg-4.col-sm-6.mb-4
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#inifyModal')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                div.shinig-img.inify
-                                    img.img-fluid(src='assets/img/logos/inify.png', alt='inify logo')
-                            .portfolio-caption
-                                .portfolio-caption-heading Inify
-                                .portfolio-caption-subheading.text-muted Influencer Marketing platform
-                    .col-lg-4.col-sm-6.mb-4.mb-lg-0
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#shootshotModal')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                div.shinig-img.shootshot
-                                    img.img-fluid(src='assets/img/logos/shootshot.png', alt='shootshot logo')
-                            .portfolio-caption
-                                .portfolio-caption-heading ShootShot
-                                .portfolio-caption-subheading.text-muted Instant Simultaneous Messaging
-                    .col-lg-4.col-sm-6.mb-4.mb-lg-0
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#resqueModal')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                div.shinig-img.resque
-                                    img.img-fluid(src='assets/img/logos/resque.png', alt='resque logo')
-                            .portfolio-caption
-                                .portfolio-caption-heading ResQue
-                                .portfolio-caption-subheading.text-muted Queueing as a Service
+        section#chatify.page-section.bg-light
+            include includes/chatify
+        section#shootshot.page-section
+            include includes/shootshot
+        section#inify.page-section.bg-light
+            include includes/inify
+        section#mysterybox.page-section
+            include includes/mysterybox
+        section#resque.page-section.bg-light
+            include includes/resque
 
         // About
         section#about.page-section
@@ -282,13 +234,6 @@ html(lang='en')
                         | Copyright &copy; Sakura Holding 2022
                     .col-lg-4.my-3.my-lg-0
                         | Email: info@[this domain]
-
-        // Portfolio Modals
-        include includes/shootshot
-        include includes/chatify
-        include includes/inify
-        include includes/mysterybox
-        include includes/resque
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
