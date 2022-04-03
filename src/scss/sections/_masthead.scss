@@ -28,7 +28,12 @@ header.masthead {
     margin-bottom: 2rem;
     font-family: $headings-font-family;
   }
+  .cursor {
+    margin-left: -1rem;
+    font-style: normal;
+  }
   #hfeatures {
+    padding: 0 1rem 0 0.5rem;
     background: $primary;
   }
 }

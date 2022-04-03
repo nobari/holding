@@ -15,24 +15,35 @@ $primary: $hyper;
 // Override Bootstrap contrast ratio
 
 $min-contrast-ratio: 1.5;
-
+body {
+  --back: #282828;
+}
+#shootshot,
 .shootshot {
   --front: #f9e428;
   --back: #000;
+  --text: #fff;
 }
+#resque,
 .resque {
   --front: #4839e7;
   --back: #9d97f3;
+  --text: #fff;
 }
+#inify,
 .inify {
-  --front: #0478a1;
-  --back: #b9dbea;
+  --front: #b9dbea;
+  --back: #0478a1;
+  --text: #fff;
 }
+#chatify,
 .chatify {
   --front: #035000;
   --back: #8db08c;
+  --text: #fff;
 }
+#mysterybox,
 .mysterybox {
-  --front: #ff9aca;
-  --back: #ffc4f9;
+  --front: #ffc4f9;
+  --back: #ff9aca;
 }
